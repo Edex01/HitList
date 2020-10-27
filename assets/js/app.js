@@ -18,7 +18,27 @@ const loadEventListeners = () => {
   search.addEventListener("keyup", searchGoals);
 
   document.addEventListener("DOMContentLoaded", getGoals);
+
+  document.addEventListener("click", MarkImp);
 };
+
+
+// mark important
+
+function MarkImp(e){
+  console.log("sdsjd");
+
+  if(e.target.parentElement.classList.contains
+    ('collection')){
+
+      console.log("new");
+      e.target.style
+      ['background-color'] = "FloralWhite";
+
+    }
+
+}
+
 
 // Adding goals
 const addGoals = (event) => {
