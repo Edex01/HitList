@@ -102,6 +102,7 @@ const clearTaskList = () => {
 
   // clear from local storage
   clearGoalsFromLS();
+  localStorage.clear();
 };
 
 // Search Goals
